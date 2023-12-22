@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:text="CALCULADORA DE IMC"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="162dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Introduzca su peso en kg"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Introduzca su altura en m"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <Button
+        android:id="@+id/miboton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
+        app:layout_constraintStart_toStartOf="@+id/editTextText3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/miboton"
+        app:layout_constraintStart_toStartOf="@+id/miboton"
+        app:layout_constraintTop_toBottomOf="@+id/miboton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
